@@ -1,4 +1,29 @@
 
+# 1.1.1 (2016-11-18)
+
+- Hide some non documented values
+
+**Metrics & keylines**
+
+- Set increment size to 64dp for tablets
+- Set increment size to 48dp for phones in landscape
+- Add base value for typography's baseline grid
+
+**Responsive UI**
+
+- Fix `material_responsive_is_tablet` behaviour
+
+**Structure**
+
+- Fix status bar size value for API <= 22
+- Rename `@dimen/material_app_bar_height_default` to `@dimen/material_app_bar_default_height`
+- Fix app bar size on phones in landscape
+- Deprecate bottom padding values of the app bar's title
+- Fix `@dimen/material_app_bar_icon_action_size`
+
+
+----
+
 # 1.1.0 (2016-11-02)
 
 - Change package name from `blue.aodev.materialvalues` to `material.values`
@@ -78,6 +103,7 @@
 # 1.0.1 (2016-10-24)
 
 - Change package name from `blue.aodev.materialspecs` to `blue.aodev.materialvalues`
+
 
 ----
 

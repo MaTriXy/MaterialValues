@@ -7,7 +7,7 @@ apply plugin: 'com.android.library'
 
 group = 'blue.aodev'
 //artifact name = module name (material-values)
-version = '1.1.0'
+version = '1.1.1'
 
 android {
     compileSdkVersion 24
@@ -16,17 +16,22 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 24
-        versionCode 3
-        versionName "1.1.0"
+        versionCode 4
+        versionName "1.1.1"
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
+        template {
+
+        }
     }
     sourceSets {
         main.res.srcDirs = ['src/main/res-style', 'src/main/res-layout', 'src/main/res-component']
+        template.res.srcDirs = main.res.srcDirs << 'src/template/res'
     }
 }
 
@@ -47,7 +52,7 @@ bintray {
         name = 'material-values'
 
         version {
-            name = '1.1.0'
+            name = '1.1.1'
         }
     }
     configurations = ['archives']
